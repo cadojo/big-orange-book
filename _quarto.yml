@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "Notes on B.O.B."
+  subtitle: "Notes on Introduction to Modern Astrophysics"
+  author: "Joey Carpinelli"
+  date: today
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - celestial-sphere.qmd
+    - summary.qmd
+    - references.qmd
+
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/american-institute-of-aeronautics-and-astronautics.csl
+bibliography: references.bib
+
+format:
+  html:
+    mainfont: "'Roboto', sans-serif;"
+    monofont: "'Roboto Mono', monospace;"
+    theme: 
+      light: [ pulse,  "formatting/common.scss", "formatting/light.scss" ]
+      dark:  [ pulse,  "formatting/common.scss", "formatting/dark.scss"  ]
+  pdf:
+    documentclass: scrreprt
+
+primary-authors: "Caroll and Ostlie"
