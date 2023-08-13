@@ -1,5 +1,34 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+I discovered computational physics far too late. My first exposure was through my 
+astrodynamics coursework, completed in the final year of my aerospace engineering M.S. 
+program. I explored the introductory material --- Kepler's Laws, conic sections, restricted 
+two-body propagation, etc. --- with a new-to-me programming language, [Julia](https://julialang.org). 
+With the mechanics of Julia under my belt, I continued on to more complicated first-year-graduate
+concepts, including Halo orbit solvers and manifold computations within the circular 
+restricted three-body problem. Using computation to find periodic orbits, and free-energy 
+paths through the solar system is still an exhilerating idea to me; through approximately 
+[4000 lines](https://github.com/cadojo/GeneralAstrodynamics.jl) of code, I could learn the
+behavior of places across our solar system. These simple simulations allowed me to feel 
+more connected to the universe I inhabit. 
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+After (recently) coming to understand my love for learning about the universe through 
+computation, I could not wait to learn more. I ordered 
+[_Introduction to Modern Astrophysics_](https://www.cambridge.org/highereducation/books/an-introduction-to-modern-astrophysics/) by {{< meta primary-authors >}}, and started
+working through each chapter. Therefore: this text!
+
+As I read each chapter, I am using this space to summarize the information I learned. 
+This will be incredibly difficult to do on my own, in spare time. At the time of writing,
+August 13th 2023, I truly have no idea if I will succeed in finishing this book; 
+the odds certainly point to **no**. Still, the attempt will help me to further understand 
+my place within the space industry. Do I contribute to science, or exploration?
+
+As I write, I will reference equation and figure numbers from the Big Orange Book using 
+phrases such as _in the text_. All other references are internal to this document. 
+
+Finally, I'm so grateful to [Quarto](https://quarto.org), [Jupyter](https://jupyter.org),
+[Julia](https://julialang.org), and other free software tools that enable quick and clear
+technical communication. 
+
+**Ad astra!**
+

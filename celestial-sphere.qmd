@@ -4,8 +4,8 @@ abstract: |
     Chapter 1 walks through the history Copernican Revolution in astronomy --- our 
     worldview's transition from geocentric to heliocentric. The following approximate 
     calculations are presented: sidereal and synodic periods, the Equitorial Coordinate 
-    System, perturbations to the Equitorial Coorrdinates caused by a Earth's precession,
-    and proper time.
+    System, perturbations to the Equitorial Coorrdinates caused by a Earth's precession
+    and the observed object's tangential velocity in the sky, and proper time.
 ---
 
 ## Retrograde Motion {#sec-retrograde}
@@ -67,22 +67,34 @@ Earth's rotational-axis's wobble, or **precession**, causes position of the vern
 $\Upsilon$ to change, and therefore causes the right ascension and declination angles to 
 change. The hour-angle of the vernal equinox, $H$, is **unchanged**. An epoch, commonly
 J2000, is used to set the _origin_ local sidereal time. The drift of $\delta$ and $\alpha$
-due to precession can be approximated by equations (1.2) and (1.3) in the text @bob.
+due to precession can be approximated by equations (1.2) and (1.3) in the text, where $t$
+is the current date specified in fractions of a year @bob.
 
 $$
 \Delta\alpha = M + N \sin\alpha \tan\alpha
-$$ {#eq-change-right-ascension}
+$$ {#eq-precession-right-ascension}
 
 $$
 \Delta\delta = N \cos\alpha
-$$ {#eq-change-declination}
+$$ {#eq-precession-declination}
 
-## Target Motion {#sec-target-motion}
+$$
+\begin{align}
+M &= 1.2812323^\circ T + 0.0003879^\circ T^2 + 0.0000101 T^3 \\
+N &= 0.5567530^\circ T + 0.0001185^\circ T^2 + 0.0000116 T^3 \\
+\end{align}
+$$ {#eq-precession-parameters}
+
+$$
+T = (t - 2000) / 100
+$$ {#eq-precession-time}
+
+## Tangential Velocity {#sec-tangential-velocity}
 
 The motion of objects in space too causes the declination and right ascension angles
-to _drift_. With a star's radial velocity with respect to an observer defined as $v_r$, and
+to _drift_. With a star's radial distance to from the observer $r$, and
 the star's **transverse velocity** defined as $v_\theta$, the star's proper motion $\mu$ 
-is given by equation (1.5) in the text @bob. 
+can be found using the text's equation (1.5) @bob. 
 Using spherical trigonometry, {{< meta primary-authors >}} derive equation (1.8) in the 
 text, which relates the change in angular distance traveled with the corresponding change
 in declination and right ascension @bob.
