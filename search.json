@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Notes on B.O.B.",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is the product of a (professional) existential crisis in August of 2023. Enjoy!"
+  },
+  {
+    "objectID": "celestial-sphere.html#sec-retrograde",
+    "href": "celestial-sphere.html#sec-retrograde",
+    "title": "2  The Celestial Sphere",
+    "section": "2.1 Retrograde Motion",
+    "text": "2.1 Retrograde Motion\nFrom the point of view of observers on Earth, Mars appears to change its direction of motion in the night sky. This effect — retrograde motion — was a great motivator for the early field of astronomy. The appearance of retrograde motion is caused by the planets’ relative positions changing.\nThe synodic period \\(S\\), and the sidereal period \\(P\\) are related to the discussion on retrograde motion. Both assume circular orbits about the Sun, with constant velocities. The synodic period relates to the oscillation of the relative position between the Earth, and the target planet. The sidereal period relates to the duration of Earth’s orientation with respect to background stars. The two periods are related by equation (1.1) in the text, where \\(P_\\bigoplus\\) is the sidereal period of Earth: \\(365.256308\\) days [1].\n\\[\nS = \\begin{cases}\n1/P - 1/P_\\bigoplus & \\text{(inferior)} \\\\\n1/P_\\bigoplus - 1/P & \\text{(superior)}\n\\end{cases}\n\\tag{2.1}\\]"
+  },
+  {
+    "objectID": "celestial-sphere.html#sec-alt-az",
+    "href": "celestial-sphere.html#sec-alt-az",
+    "title": "2  The Celestial Sphere",
+    "section": "2.2 Altitude/Azimuth",
+    "text": "2.2 Altitude/Azimuth\nAfter I was given an Orion ST-80 telescope in 2022, my father (a phycisist in his own right) introduced me to altitude/azimuth coordinates. We could use these coordinates to track objects in the night sky by orienting the telescope’s two degrees of freedom along the horizon, and vertically “up” from the horizon to the point on the celestial sphere directly overhead the observer: the zenith. The celestial sphere coincides with two points: the point being observed, and the zenith. The altitude coordinate \\(h\\) is the angle from the horizontal to the observed object. The azimuth coordinate \\(A\\) is the angle from north along the observer-zenith axis (clockwise). This coordinate system says nothing about Earth’s rotation about its axis (diurnal motion), or Earth’s motion about the Sun (annual motion)."
+  },
+  {
+    "objectID": "celestial-sphere.html#sec-equitorial",
+    "href": "celestial-sphere.html#sec-equitorial",
+    "title": "2  The Celestial Sphere",
+    "section": "2.3 Equitorial Coordinates",
+    "text": "2.3 Equitorial Coordinates\nThe Equitorial Coordinate System also uses three coordinates, which “are based on the latitude-longitude system of Earth but does not participate in the planet’s rotation” [1]. The angle of declination — \\(\\delta\\) — corresponds to latitude. The right ascension — \\(\\alpha\\) — is a kind of longitude angle. The angle of right ascension is measured from the vernal equinox \\(\\Upsilon\\), counter-clockwise about the celestial polar axis or meridian: the axis from celestial south pole to celestial north pole. Neither \\(\\delta\\) nor \\(\\alpha\\) are affected by the Earth’s annual motion.\nThe third parameter brings information about Earth’s annual motion into the Equitorial Coordinate System: the local sidereal time. The hour-angle \\(H\\) of the vernal equinox is “equivalent to” local sidereal time; the hour-angle is the angle between the object and the observer’s meridian, “measured in the direction of the object’s” motion around the celestial sphere” [1]. Every word in that last quote is important. We are encoding information about the Earth’s annual motion by relating the angle of the object about Earth’s meridian from the position of the vernal equinox, and that angle’s direction is defined by the object’s motion. Yuck!"
+  },
+  {
+    "objectID": "celestial-sphere.html#sec-precession",
+    "href": "celestial-sphere.html#sec-precession",
+    "title": "2  The Celestial Sphere",
+    "section": "2.4 Precession",
+    "text": "2.4 Precession\nEarth’s rotational-axis’s wobble, or precession, causes position of the vernal equinox \\(\\Upsilon\\) to change, and therefore causes the right ascension and declination angles to change. The hour-angle of the vernal equinox, \\(H\\), is unchanged. An epoch, commonly J2000, is used to set the origin local sidereal time. The drift of \\(\\delta\\) and \\(\\alpha\\) due to precession can be approximated by equations (1.2) and (1.3) in the text [1].\n\\[\n\\Delta\\alpha = M + N \\sin\\alpha \\tan\\alpha\n\\tag{2.2}\\]\n\\[\n\\Delta\\delta = N \\cos\\alpha\n\\tag{2.3}\\]"
+  },
+  {
+    "objectID": "celestial-sphere.html#sec-target-motion",
+    "href": "celestial-sphere.html#sec-target-motion",
+    "title": "2  The Celestial Sphere",
+    "section": "2.5 Target Motion",
+    "text": "2.5 Target Motion\nThe motion of objects in space too causes the declination and right ascension angles to drift. With a star’s radial velocity with respect to an observer defined as \\(v_r\\), and the star’s transverse velocity defined as \\(v_\\theta\\), the star’s proper motion \\(\\mu\\) is given by equation (1.5) in the text [1]. Using spherical trigonometry, Caroll and Ostlie derive equation (1.8) in the text, which relates the change in angular distance traveled with the corresponding change in declination and right ascension [1].\n\\[\n\\mu = \\frac{d \\theta}{d t} = \\frac{v_\\theta}{r}\n\\tag{2.4}\\]\n\\[\n(\\Delta \\theta)^2 = (\\Delta \\alpha \\cos\\delta)^2 + (\\Delta \\delta)^2\n\\tag{2.5}\\]\n\n\n\n\n[1] Carroll, B. W., and Ostlie, D. A. An Introduction to Modern Astrophysics. Cambridge University Press, 2017."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "3  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "[1] Carroll, B. W., and Ostlie, D. A. An\nIntroduction to Modern Astrophysics. Cambridge University Press,\n2017."
+  }
+]
