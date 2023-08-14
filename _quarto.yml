@@ -11,6 +11,7 @@ book:
     - celestial-sphere.qmd
     - celestial-mechanics.qmd
     - references.qmd
+  output-file: notes
 
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/american-institute-of-aeronautics-and-astronautics.csl
 bibliography: references.bib
@@ -24,7 +25,6 @@ format:
       dark:  [ pulse,  "formatting/common.scss", "formatting/dark.scss"  ]
   pdf:
     documentclass: scrreprt
-    output-file: notes.pdf
     extract-media: fig
 
 primary-authors: "Caroll and Ostlie"
