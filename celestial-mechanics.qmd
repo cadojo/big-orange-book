@@ -38,7 +38,7 @@ the opposite point along the major axis is referred to as _aphelion_. The suffix
 refers to our Sun. More general terms are _periapsis_ and _apoapsis_.
 
 :::{#fig-geometry-ellipse fig-cap="The Geometry of an Ellipse ([Wikipedia](https://en.wikipedia.org/wiki/Ellipse))" style="padding: 3em;"}
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Ellipse-def0.svg/2560px-Ellipse-def0.svg.png){style="background-color: white;"}
+![](/img/ellipse.png){style="background-color: white;"}
 :::
 
 The following equations hold for ellipses. All are pulled from Chapter 2 of the text @bob. 
@@ -137,10 +137,10 @@ $$
 $$ {#eq-binary-reduced-mass}
 
 $$
-\begin{align}
+\begin{aligned}
 r_1 &= -\frac{\mu}{m_1} \mathbf{r} \\
 r_2 &= -\frac{\mu}{m_2} \mathbf{r}
-\end{align}
+\end{aligned}
 $$
 
 In this reduced case of the binary system, the total angular momentum $L$ can be found 

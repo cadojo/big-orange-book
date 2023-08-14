@@ -25,5 +25,6 @@ format:
   pdf:
     documentclass: scrreprt
     output-file: notes.pdf
+    extract-media: fig
 
 primary-authors: "Caroll and Ostlie"

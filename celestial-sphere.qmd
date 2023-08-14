@@ -79,10 +79,10 @@ $$
 $$ {#eq-precession-declination}
 
 $$
-\begin{align}
+\begin{aligned}
 M &= 1.2812323^\circ T + 0.0003879^\circ T^2 + 0.0000101 T^3 \\
 N &= 0.5567530^\circ T + 0.0001185^\circ T^2 + 0.0000116 T^3 \\
-\end{align}
+\end{aligned}
 $$ {#eq-precession-parameters}
 
 $$
