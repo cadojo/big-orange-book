@@ -3,7 +3,7 @@ project:
 
 book:
   title: "Introduction to Modern Astrophysics"
-  subtitle: "Notes on Bob: the Big Orange Book"
+  subtitle: "Notes on BOB: the Big Orange Book"
   author: "Joey Carpinelli"
   date: today
   chapters:
