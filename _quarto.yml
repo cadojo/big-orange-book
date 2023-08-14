@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "Introduction to Modern Astrophysics"
-  subtitle: "Notes on BOB: the Big Orange Book"
+  title: "Notes on Modern Astrophysics"
+  subtitle: "An Exploration of BOB: the Big Orange Book"
   author: "Joey Carpinelli"
   date: today
   chapters:
@@ -20,6 +20,9 @@ format:
   html:
     mainfont: "'Roboto', sans-serif;"
     monofont: "'Roboto Mono', monospace;"
+    title-block-banner: true
+    include-in-header: 
+      text: <meta name="theme-color" content="rgb(204, 100, 37)"/>
     theme: 
       light: [ pulse,  "formatting/common.scss", "formatting/light.scss" ]
       dark:  [ pulse,  "formatting/common.scss", "formatting/dark.scss"  ]
