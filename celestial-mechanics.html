@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Notes on B.O.B. - 3&nbsp; Summary</title>
+<title>Introduction to Modern Astrophysics - 2&nbsp; Celestial Mechanics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -64,6 +83,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -76,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./summary.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./celestial-mechanics.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Celestial Mechanics</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -91,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Notes on B.O.B.</a> 
+      <a href="./">Introduction to Modern Astrophysics</a> 
         <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
@@ -112,20 +133,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./celestial-sphere.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Celestial Sphere</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Celestial Sphere</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  <a href="./celestial-mechanics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Celestial Mechanics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -140,14 +155,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#keplers-laws" id="toc-keplers-laws" class="nav-link active" data-scroll-target="#keplers-laws"><span class="header-section-number">2.1</span> Kepler’s Laws</a></li>
+  <li><a href="#newtons-laws" id="toc-newtons-laws" class="nav-link" data-scroll-target="#newtons-laws"><span class="header-section-number">2.2</span> Newton’s Laws</a></li>
+  <li><a href="#work-and-energy" id="toc-work-and-energy" class="nav-link" data-scroll-target="#work-and-energy"><span class="header-section-number">2.3</span> Work and Energy</a></li>
+  <li><a href="#gravitational-constraints" id="toc-gravitational-constraints" class="nav-link" data-scroll-target="#gravitational-constraints"><span class="header-section-number">2.4</span> Gravitational Constraints</a></li>
+  <li><a href="#the-virial-theorem" id="toc-the-virial-theorem" class="nav-link" data-scroll-target="#the-virial-theorem"><span class="header-section-number">2.5</span> The Virial Theorem</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Celestial Mechanics</span></h1>
 </div>
 
 
@@ -159,12 +184,131 @@ ul.task-list li input[type="checkbox"] {
     
   </div>
   
+<div>
+  <div class="abstract">
+    <div class="abstract-title">Abstract</div>
+    <p>Chapter 2 walks through the historical contributions of Kepler’s Laws, Galileo’s scientific confirmation of heliocentrism, and Newton’s contributions to physics which successfully connected Galileo (and others’) astronomical observations with <em>gravity</em>. Caroll and Ostlie introduce work and energy, and derive Kepler’s Laws before proving the <em>virial theorem</em>: that the total energy of a gravitationally bound systems is equivalent to “one-half of the time-averaged potential energy” <span class="citation" data-cites="bob">[<a href="references.html#ref-bob" role="doc-biblioref">1</a>]</span>.</p>
+  </div>
+</div>
 
 </header>
 
-<p>In summary, this book has no content whatsoever.</p>
+<section id="keplers-laws" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="keplers-laws"><span class="header-section-number">2.1</span> Kepler’s Laws</h2>
+<p>The following laws — Kepler’s Laws — are quoted directly from Caroll and Ostlie <span class="citation" data-cites="bob">[<a href="references.html#ref-bob" role="doc-biblioref">1</a>]</span>. Each are derived later in Chapter 2.</p>
+<ol type="1">
+<li>A planet orbits the Sun in an ellipse, with the Sun at one focus<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> of the ellipse.</li>
+<li>A line connecting a planet to the Sun sweeps out equal areas in equal time intervols.</li>
+<li>The Harmonic Law: <span class="math inline">\(P^2 = a^3\)</span>.</li>
+</ol>
+<p>Kepler’s definitions place the paths of all orbits on <em>conic sections</em>: cross-sections of a cone. While circular, elliptical, parabolic, and hyperbolic paths are all conic sections, ach of the planets Kepler identified in the solar system have elliptical orbits. For this reason, a substantial section of Chapter 2 reviews the geometry of ellipses.</p>
+<p>An ellipse has two focal points, with semimajor axis <span class="math inline">\(a\)</span> defined as one-half the length of the diameter — the line which passes through both focal points — of the ellipse. The central body — in our case, the Sun — is located at one of the two focal points; that point is <em>principle focus</em> <span class="citation" data-cites="bob">[<a href="references.html#ref-bob" role="doc-biblioref">1</a>]</span>. The distance from the principle focus to an orbiting object is referred to in <a href="#eq-equation-of-ellipse">Equation&nbsp;<span>2.1</span></a> as <span class="math inline">\(r\)</span>, and the distance from the other focus is referred to as <span class="math inline">\(r'\)</span>. The semiminor axis <span class="math inline">\(b\)</span> is perpendicular to, and bisects, the semimajor axis. The eccentricity <span class="math inline">\(e\)</span> is the distance between both focal points divided by the major axis <span class="math inline">\(2a\)</span> <span class="citation" data-cites="bob">[<a href="references.html#ref-bob" role="doc-biblioref">1</a>]</span>. The label <em>perihelion</em> on the ellipse, and on the major axis, which is closes to the principle focus; the opposite point along the major axis is referred to as <em>aphelion</em>. The suffix <em>helion</em> refers to our Sun. More general terms are <em>periapsis</em> and <em>apoapsis</em>.</p>
+<div id="fig-geometry-ellipse" class="quarto-figure quarto-figure-center anchored" style="padding: 3em;">
+<figure class="figure">
+<p><img src="./img/ellipse.png" class="img-fluid figure-img" style="background-color: white;"></p>
+<figcaption class="figure-caption">Figure&nbsp;2.1: The Geometry of an Ellipse (<a href="https://en.wikipedia.org/wiki/Ellipse">Wikipedia</a>)</figcaption>
+</figure>
+</div>
+<p>The following equations hold for ellipses. All are pulled from Chapter 2 of the text <span class="citation" data-cites="bob">[<a href="references.html#ref-bob" role="doc-biblioref">1</a>]</span>.</p>
+<p><span id="eq-equation-of-ellipse"><span class="math display">\[
+r + r' = 2a
+\tag{2.1}\]</span></span></p>
+<p><span id="eq-eccentricity-axes"><span class="math display">\[
+b^2 = a^2 (1 - e^2)
+\tag{2.2}\]</span></span></p>
+<p>Polar coordinates are convenient when describing conic orbits. The angle <span class="math inline">\(\theta\)</span> is the <em>true anamoly</em>, and represents the orbiting object’s angular position past perihelion. The distance from the principle focus <span class="math inline">\(r\)</span> is related to true anamoly; the precise relationship relies on the <em>type</em> of conic orbit. For elliptical orbits, <a href="#eq-ecc-true-anamoly">Equation&nbsp;<span>2.3</span></a> relates <span class="math inline">\(r\)</span> and <span class="math inline">\(\theta\)</span>; note that circular orbits are simply a special case where eccentricity <span class="math inline">\(e\)</span> is zero. <a href="#eq-par-true-anamoly">Equation&nbsp;<span>2.4</span></a> relates <span class="math inline">\(r\)</span> and <span class="math inline">\(\theta\)</span> for parabolic orbits, with <span class="math inline">\(p\)</span> defined as the distance from the <em>single</em> parabolic focus to perihelion. Finally, for hyperbolic orbits, equation <a href="#eq-hyp-true-anamoly">Equation&nbsp;<span>2.5</span></a> relates <span class="math inline">\(r\)</span> and <span class="math inline">\(\theta\)</span>. An object on a parabolic orbit will be at rest when <em>infinitely far</em> from the central gravitational body. A hyperbolic orbit would keep the object’s speed positive while it travels away from the central gravitational body. An object with a velocity <em>equal to</em> to the central body’s escape velocity <span class="math inline">\(v_{\text{esc}}\)</span> would follow a parabolic orbit. An object follows a hyperbolic orbit if its velocity <em>exceeds</em> the central body’s excape velocity.</p>
+<p><span id="eq-ecc-true-anamoly"><span class="math display">\[
+\begin{array}{cc}
+r = \frac{a(1-e^2)}{1 + e\cos\theta} &amp; (0 \leq e &lt; 1)
+\end{array}
+\tag{2.3}\]</span></span></p>
+<p><span id="eq-par-true-anamoly"><span class="math display">\[
+\begin{array}{cc}
+r = \frac{2p}{1 + \cos\theta} &amp; (e = 1)
+\end{array}
+\tag{2.4}\]</span></span></p>
+<p><span id="eq-hyp-true-anamoly"><span class="math display">\[
+\begin{array}{cc}
+r = \frac{a(e^2-1)}{1 + e\cos\theta} &amp; (e &gt; 1)
+\end{array}
+\tag{2.5}\]</span></span></p>
+<p><span id="eq-vesc"><span class="math display">\[
+v_{\text{esc}} = \sqrt{2 G M / r}
+\tag{2.6}\]</span></span></p>
+</section>
+<section id="newtons-laws" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="newtons-laws"><span class="header-section-number">2.2</span> Newton’s Laws</h2>
+<p>Each of Newton’s Laws below are directly quoted from Caroll and Ostlie <span class="citation" data-cites="bob">[<a href="references.html#ref-bob" role="doc-biblioref">1</a>]</span>.</p>
+<ol type="1">
+<li><em>The Law of Inertia</em>. An object at rest will remain at rest and an object in motion will remain in motion in a straight line at a constant speed unless acted upon by an external force.</li>
+<li>The <em>net</em> force (the sum of all forces) acting on an object is proportional to the object’s mass and its resultant acceleration.</li>
+<li>For every action there is an equal and opposite reaction<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+</ol>
+<p>These laws, which are taught in high school physics classes, revolutionized physics. Newton’s Law of Universal Gravitation, shown in <a href="#eq-newton-gravity">Equation&nbsp;<span>2.7</span></a>, succesfully linked the motions of our solar system’s bodies to gravitation. Caroll and Ostlie also prove that the gravitational force due to a spherical <em>shell</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> is equivalent to the gravitational force due to the shell’s <em>point of center of mass</em> <span class="citation" data-cites="bob">[<a href="references.html#ref-bob" role="doc-biblioref">1</a>]</span>.</p>
+<!--# TODO work out the solid sphere proof! -->
+<p><span id="eq-newton-gravity"><span class="math display">\[
+F = G \frac{M m}{r^2}
+\tag{2.7}\]</span></span></p>
+</section>
+<section id="work-and-energy" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="work-and-energy"><span class="header-section-number">2.3</span> Work and Energy</h2>
+<p>The expression for gravitational potential energy <span class="math inline">\(U\)</span> is shown in <a href="#eq-potential-gravity">Equation&nbsp;<span>2.8</span></a>, and gravitational kinetic energy <span class="math inline">\(K\)</span> is shown in <a href="#eq-kinetic-gravity">Equation&nbsp;<span>2.9</span></a>.</p>
+<p><span id="eq-potential-gravity"><span class="math display">\[
+U = -G \frac{M m}{r}
+\tag{2.8}\]</span></span></p>
+<p><span id="eq-kinetic-gravity"><span class="math display">\[
+K = \frac{1}{2} m v^2
+\tag{2.9}\]</span></span></p>
+</section>
+<section id="gravitational-constraints" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="gravitational-constraints"><span class="header-section-number">2.4</span> Gravitational Constraints</h2>
+<p>The center of mass of a gravitationally bound system is <strong>constant</strong>. This produces a useful simplification in the two-body case: the dynamics can be simplified to a reduced mass <span class="math inline">\(\mu\)</span> with position <span class="math inline">\(\mathbb{r}\)</span> orbiting the center of mass of the original system with total mass <span class="math inline">\(M\)</span>. The equations below are pulled directly from equations 2.22, 2.23, and 2.24 in the text <span class="citation" data-cites="bob">[<a href="references.html#ref-bob" role="doc-biblioref">1</a>]</span>.</p>
+<p><span id="eq-binary-reduced-mass"><span class="math display">\[
+\mu \equiv \frac{m_1 m_2}{m_1 + m_2}
+\tag{2.10}\]</span></span></p>
+<p><span class="math display">\[
+\begin{aligned}
+r_1 &amp;= -\frac{\mu}{m_1} \mathbf{r} \\
+r_2 &amp;= -\frac{\mu}{m_2} \mathbf{r}
+\end{aligned}
+\]</span></p>
+<p>In this reduced case of the binary system, the total angular momentum <span class="math inline">\(L\)</span> can be found using <a href="#eq-binary-angular-momentum">Equation&nbsp;<span>2.11</span></a>.</p>
+<p><span id="eq-binary-angular-momentum"><span class="math display">\[
+\mathbf{L} = \mu \mathbf{r} \times \mathbf{v} = \mathbf{r} \times \mathbf{p}
+\tag{2.11}\]</span></span></p>
+<p>The derivations of Kepler’s Laws in Chapter 2 culminate in more general forms of the laws’ previous mathematical expressions. The following equations, pulled from the text, are valid for binary orbits <span class="citation" data-cites="bob">[<a href="references.html#ref-bob" role="doc-biblioref">1</a>]</span>. <a href="#eq-binary-velocity">Equation&nbsp;<span>2.14</span></a> and <a href="#eq-binary-period">Equation&nbsp;<span>2.15</span></a> represents the velocity and orbital period of the reduced mass <span class="math inline">\(\mu\)</span>, respectively.</p>
+<p><span id="eq-binary-kepler1"><span class="math display">\[
+\frac{d A}{d t} = \frac{1}{2} \frac{L}{\mu}
+\tag{2.12}\]</span></span></p>
+<p><span id="eq-binary-total-energy"><span class="math display">\[
+E = -G \frac{M \mu}{2 a} = -G \frac{m_1 m_2}{2 a}
+\tag{2.13}\]</span></span></p>
+<p><span id="eq-binary-velocity"><span class="math display">\[
+v^2 = G \left(m_1 + m_2\right) \left(\frac{2}{r} - \frac{1}{a}\right)
+\tag{2.14}\]</span></span></p>
+<p><span id="eq-binary-period"><span class="math display">\[
+P^2 = \frac{r \pi^2}{G \left(m_1 + m_2\right)}
+\tag{2.15}\]</span></span></p>
+</section>
+<section id="the-virial-theorem" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="the-virial-theorem"><span class="header-section-number">2.5</span> The Virial Theorem</h2>
+<p><mark>For another day!</mark></p>
 
 
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-bob" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Carroll, B. W., and Ostlie, D. A. <em>An Introduction to Modern Astrophysics</em>. Cambridge University Press, 2017.</div>
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>As Caroll and Ostlie explain later in Chapter 2, objects in our solar system <em>actually</em> orbit the solar system barycenter, which is located just outside the surface of the sun.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>This law is clear when considering forces as <em>vectors</em>. “Mathematically, the third law can be represented as… <span class="math inline">\(F_{12} = -F_{21}\)</span>” <span class="citation" data-cites="bob">[<a href="references.html#ref-bob" role="doc-biblioref">1</a>]</span>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Qualitatively, the word <em>shell</em> feels unimportant to me. The proof presented by Caroll and Ostlie is specific to a spherical shell, but I suspect that proof can be extended to <em>all spheres</em>; after integrating over cross-sectional <em>rings</em> on each shell, integrate the force due to each infinitesimally thin <em>shell</em>. I should try to work this out!<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -518,7 +662,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./celestial-sphere.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Celestial Sphere</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Celestial Sphere</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

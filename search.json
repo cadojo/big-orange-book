@@ -2,58 +2,107 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Notes on B.O.B.",
+    "title": "Introduction to Modern Astrophysics",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+    "text": "Preface"
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "This is the product of a (professional) existential crisis in August of 2023. Enjoy!"
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "Introduction to Modern Astrophysics",
+    "section": "Background",
+    "text": "Background\nI discovered computational physics far too late. My first exposure was through my astrodynamics coursework, completed in the final year of my aerospace engineering M.S. program. I explored the introductory material — Kepler’s Laws, conic sections, restricted two-body propagation, etc. — with a new-to-me programming language, Julia. With the mechanics of Julia under my belt, I continued on to more complicated first-year-graduate concepts, including Halo orbit solvers and manifold computations within the circular restricted three-body problem. Using computation to find periodic orbits, and free-energy paths through the solar system is still an exhilerating idea to me; through approximately 4000 lines of code, I could learn the behavior of places across our solar system. These simple simulations allowed me to feel more connected to the universe I inhabit.\nAfter (recently) coming to understand my love for learning about the universe through computation, I could not wait to learn more. I ordered Introduction to Modern Astrophysics by Caroll and Ostlie, and started working through each chapter. Therefore: this text!"
+  },
+  {
+    "objectID": "index.html#methodology",
+    "href": "index.html#methodology",
+    "title": "Introduction to Modern Astrophysics",
+    "section": "Methodology",
+    "text": "Methodology\nAs I read each chapter, I am using this space to summarize the information I learned. This will be incredibly difficult to do on my own, in spare time. At the time of writing, August 13th 2023, I truly have no idea if I will succeed in finishing this book; the odds certainly point to no. Still, the attempt will help me to further understand my place within the space industry. Do I contribute to science, or exploration?\nAs I write, I will reference equation and figure numbers from the Big Orange Book using phrases such as in the text. All other references are internal to this document. As a rule of thumb, all click-able links are internal links!"
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "Introduction to Modern Astrophysics",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nFinally, I’m so grateful to Quarto, Jupyter, Julia, and other free software tools that enable quick and clear technical communication.\nAd astra!"
   },
   {
     "objectID": "celestial-sphere.html#sec-retrograde",
     "href": "celestial-sphere.html#sec-retrograde",
-    "title": "2  The Celestial Sphere",
-    "section": "2.1 Retrograde Motion",
-    "text": "2.1 Retrograde Motion\nFrom the point of view of observers on Earth, Mars appears to change its direction of motion in the night sky. This effect — retrograde motion — was a great motivator for the early field of astronomy. The appearance of retrograde motion is caused by the planets’ relative positions changing.\nThe synodic period \\(S\\), and the sidereal period \\(P\\) are related to the discussion on retrograde motion. Both assume circular orbits about the Sun, with constant velocities. The synodic period relates to the oscillation of the relative position between the Earth, and the target planet. The sidereal period relates to the duration of Earth’s orientation with respect to background stars. The two periods are related by equation (1.1) in the text, where \\(P_\\bigoplus\\) is the sidereal period of Earth: \\(365.256308\\) days [1].\n\\[\nS = \\begin{cases}\n1/P - 1/P_\\bigoplus & \\text{(inferior)} \\\\\n1/P_\\bigoplus - 1/P & \\text{(superior)}\n\\end{cases}\n\\tag{2.1}\\]"
+    "title": "1  The Celestial Sphere",
+    "section": "1.1 Retrograde Motion",
+    "text": "1.1 Retrograde Motion\nFrom the point of view of observers on Earth, Mars appears to change its direction of motion in the night sky. This effect — retrograde motion — was a great motivator for the early field of astronomy. The appearance of retrograde motion is caused by the planets’ relative positions changing.\nThe synodic period \\(S\\), and the sidereal period \\(P\\) are related to the discussion on retrograde motion. Both assume circular orbits about the Sun, with constant velocities. The synodic period relates to the oscillation of the relative position between the Earth, and the target planet. The sidereal period relates to the duration of Earth’s orientation with respect to background stars. The two periods are related by equation (1.1) in the text, where \\(P_\\bigoplus\\) is the sidereal period of Earth: \\(365.256308\\) days [1].\n\\[\nS = \\begin{cases}\n1/P - 1/P_\\bigoplus & \\text{(inferior)} \\\\\n1/P_\\bigoplus - 1/P & \\text{(superior)}\n\\end{cases}\n\\tag{1.1}\\]"
   },
   {
     "objectID": "celestial-sphere.html#sec-alt-az",
     "href": "celestial-sphere.html#sec-alt-az",
-    "title": "2  The Celestial Sphere",
-    "section": "2.2 Altitude/Azimuth",
-    "text": "2.2 Altitude/Azimuth\nAfter I was given an Orion ST-80 telescope in 2022, my father (a phycisist in his own right) introduced me to altitude/azimuth coordinates. We could use these coordinates to track objects in the night sky by orienting the telescope’s two degrees of freedom along the horizon, and vertically “up” from the horizon to the point on the celestial sphere directly overhead the observer: the zenith. The celestial sphere coincides with two points: the point being observed, and the zenith. The altitude coordinate \\(h\\) is the angle from the horizontal to the observed object. The azimuth coordinate \\(A\\) is the angle from north along the observer-zenith axis (clockwise). This coordinate system says nothing about Earth’s rotation about its axis (diurnal motion), or Earth’s motion about the Sun (annual motion)."
+    "title": "1  The Celestial Sphere",
+    "section": "1.2 Altitude/Azimuth",
+    "text": "1.2 Altitude/Azimuth\nAfter I was given an Orion ST-80 telescope in 2022, my father (a phycisist in his own right) introduced me to altitude/azimuth coordinates. We could use these coordinates to track objects in the night sky by orienting the telescope’s two degrees of freedom along the horizon, and vertically “up” from the horizon to the point on the celestial sphere directly overhead the observer: the zenith. The celestial sphere coincides with two points: the point being observed, and the zenith. The altitude coordinate \\(h\\) is the angle from the horizontal to the observed object. The azimuth coordinate \\(A\\) is the angle from north along the observer-zenith axis (clockwise). This coordinate system says nothing about Earth’s rotation about its axis (diurnal motion), or Earth’s motion about the Sun (annual motion)."
   },
   {
     "objectID": "celestial-sphere.html#sec-equitorial",
     "href": "celestial-sphere.html#sec-equitorial",
-    "title": "2  The Celestial Sphere",
-    "section": "2.3 Equitorial Coordinates",
-    "text": "2.3 Equitorial Coordinates\nThe Equitorial Coordinate System also uses three coordinates, which “are based on the latitude-longitude system of Earth but does not participate in the planet’s rotation” [1]. The angle of declination — \\(\\delta\\) — corresponds to latitude. The right ascension — \\(\\alpha\\) — is a kind of longitude angle. The angle of right ascension is measured from the vernal equinox \\(\\Upsilon\\), counter-clockwise about the celestial polar axis or meridian: the axis from celestial south pole to celestial north pole. Neither \\(\\delta\\) nor \\(\\alpha\\) are affected by the Earth’s annual motion.\nThe third parameter brings information about Earth’s annual motion into the Equitorial Coordinate System: the local sidereal time. The hour-angle \\(H\\) of the vernal equinox is “equivalent to” local sidereal time; the hour-angle is the angle between the object and the observer’s meridian, “measured in the direction of the object’s” motion around the celestial sphere” [1]. Every word in that last quote is important. We are encoding information about the Earth’s annual motion by relating the angle of the object about Earth’s meridian from the position of the vernal equinox, and that angle’s direction is defined by the object’s motion. Yuck!"
+    "title": "1  The Celestial Sphere",
+    "section": "1.3 Equitorial Coordinates",
+    "text": "1.3 Equitorial Coordinates\nThe Equitorial Coordinate System also uses three coordinates, which “are based on the latitude-longitude system of Earth but does not participate in the planet’s rotation” [1]. The angle of declination — \\(\\delta\\) — corresponds to latitude. The right ascension — \\(\\alpha\\) — is a kind of longitude angle. The angle of right ascension is measured from the vernal equinox \\(\\Upsilon\\), counter-clockwise about the celestial polar axis or meridian: the axis from celestial south pole to celestial north pole. Neither \\(\\delta\\) nor \\(\\alpha\\) are affected by the Earth’s annual motion.\nThe third parameter brings information about Earth’s annual motion into the Equitorial Coordinate System: the local sidereal time. The hour-angle \\(H\\) of the vernal equinox is “equivalent to” local sidereal time; the hour-angle is the angle between the object and the observer’s meridian, “measured in the direction of the object’s” motion around the celestial sphere” [1]. Every word in that last quote is important. We are encoding information about the Earth’s annual motion by relating the angle of the object about Earth’s meridian from the position of the vernal equinox, and that angle’s direction is defined by the object’s motion. Yuck!"
   },
   {
     "objectID": "celestial-sphere.html#sec-precession",
     "href": "celestial-sphere.html#sec-precession",
-    "title": "2  The Celestial Sphere",
-    "section": "2.4 Precession",
-    "text": "2.4 Precession\nEarth’s rotational-axis’s wobble, or precession, causes position of the vernal equinox \\(\\Upsilon\\) to change, and therefore causes the right ascension and declination angles to change. The hour-angle of the vernal equinox, \\(H\\), is unchanged. An epoch, commonly J2000, is used to set the origin local sidereal time. The drift of \\(\\delta\\) and \\(\\alpha\\) due to precession can be approximated by equations (1.2) and (1.3) in the text [1].\n\\[\n\\Delta\\alpha = M + N \\sin\\alpha \\tan\\alpha\n\\tag{2.2}\\]\n\\[\n\\Delta\\delta = N \\cos\\alpha\n\\tag{2.3}\\]"
+    "title": "1  The Celestial Sphere",
+    "section": "1.4 Precession",
+    "text": "1.4 Precession\nEarth’s rotational-axis’s wobble, or precession, causes position of the vernal equinox \\(\\Upsilon\\) to change, and therefore causes the right ascension and declination angles to change. The hour-angle of the vernal equinox, \\(H\\), is unchanged. An epoch, commonly J2000, is used to set the origin local sidereal time. The drift of \\(\\delta\\) and \\(\\alpha\\) due to precession can be approximated by equations (1.2) and (1.3) in the text, where \\(t\\) is the current date specified in fractions of a year [1].\n\\[\n\\Delta\\alpha = M + N \\sin\\alpha \\tan\\alpha\n\\tag{1.2}\\]\n\\[\n\\Delta\\delta = N \\cos\\alpha\n\\tag{1.3}\\]\n\\[\n\\begin{aligned}\nM &= 1.2812323^\\circ T + 0.0003879^\\circ T^2 + 0.0000101 T^3 \\\\\nN &= 0.5567530^\\circ T + 0.0001185^\\circ T^2 + 0.0000116 T^3 \\\\\n\\end{aligned}\n\\tag{1.4}\\]\n\\[\nT = (t - 2000) / 100\n\\tag{1.5}\\]"
   },
   {
-    "objectID": "celestial-sphere.html#sec-target-motion",
-    "href": "celestial-sphere.html#sec-target-motion",
-    "title": "2  The Celestial Sphere",
-    "section": "2.5 Target Motion",
-    "text": "2.5 Target Motion\nThe motion of objects in space too causes the declination and right ascension angles to drift. With a star’s radial velocity with respect to an observer defined as \\(v_r\\), and the star’s transverse velocity defined as \\(v_\\theta\\), the star’s proper motion \\(\\mu\\) is given by equation (1.5) in the text [1]. Using spherical trigonometry, Caroll and Ostlie derive equation (1.8) in the text, which relates the change in angular distance traveled with the corresponding change in declination and right ascension [1].\n\\[\n\\mu = \\frac{d \\theta}{d t} = \\frac{v_\\theta}{r}\n\\tag{2.4}\\]\n\\[\n(\\Delta \\theta)^2 = (\\Delta \\alpha \\cos\\delta)^2 + (\\Delta \\delta)^2\n\\tag{2.5}\\]\n\n\n\n\n[1] Carroll, B. W., and Ostlie, D. A. An Introduction to Modern Astrophysics. Cambridge University Press, 2017."
+    "objectID": "celestial-sphere.html#sec-tangential-velocity",
+    "href": "celestial-sphere.html#sec-tangential-velocity",
+    "title": "1  The Celestial Sphere",
+    "section": "1.5 Tangential Velocity",
+    "text": "1.5 Tangential Velocity\nThe motion of objects in space too causes the declination and right ascension angles to drift. With a star’s radial distance to from the observer \\(r\\), and the star’s transverse velocity defined as \\(v_\\theta\\), the star’s proper motion \\(\\mu\\) can be found using the text’s equation (1.5) [1]. Using spherical trigonometry, Caroll and Ostlie derive equation (1.8) in the text, which relates the change in angular distance traveled with the corresponding change in declination and right ascension [1].\n\\[\n\\mu = \\frac{d \\theta}{d t} = \\frac{v_\\theta}{r}\n\\tag{1.6}\\]\n\\[\n(\\Delta \\theta)^2 = (\\Delta \\alpha \\cos\\delta)^2 + (\\Delta \\delta)^2\n\\tag{1.7}\\]\n\n\n\n\n[1] Carroll, B. W., and Ostlie, D. A. An Introduction to Modern Astrophysics. Cambridge University Press, 2017."
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "3  Summary",
+    "objectID": "celestial-mechanics.html#keplers-laws",
+    "href": "celestial-mechanics.html#keplers-laws",
+    "title": "2  Celestial Mechanics",
+    "section": "2.1 Kepler’s Laws",
+    "text": "2.1 Kepler’s Laws\nThe following laws — Kepler’s Laws — are quoted directly from Caroll and Ostlie [1]. Each are derived later in Chapter 2.\n\nA planet orbits the Sun in an ellipse, with the Sun at one focus1 of the ellipse.\nA line connecting a planet to the Sun sweeps out equal areas in equal time intervols.\nThe Harmonic Law: \\(P^2 = a^3\\).\n\nKepler’s definitions place the paths of all orbits on conic sections: cross-sections of a cone. While circular, elliptical, parabolic, and hyperbolic paths are all conic sections, ach of the planets Kepler identified in the solar system have elliptical orbits. For this reason, a substantial section of Chapter 2 reviews the geometry of ellipses.\nAn ellipse has two focal points, with semimajor axis \\(a\\) defined as one-half the length of the diameter — the line which passes through both focal points — of the ellipse. The central body — in our case, the Sun — is located at one of the two focal points; that point is principle focus [1]. The distance from the principle focus to an orbiting object is referred to in Equation 2.1 as \\(r\\), and the distance from the other focus is referred to as \\(r'\\). The semiminor axis \\(b\\) is perpendicular to, and bisects, the semimajor axis. The eccentricity \\(e\\) is the distance between both focal points divided by the major axis \\(2a\\) [1]. The label perihelion on the ellipse, and on the major axis, which is closes to the principle focus; the opposite point along the major axis is referred to as aphelion. The suffix helion refers to our Sun. More general terms are periapsis and apoapsis.\n\n\n\nFigure 2.1: The Geometry of an Ellipse (Wikipedia)\n\n\nThe following equations hold for ellipses. All are pulled from Chapter 2 of the text [1].\n\\[\nr + r' = 2a\n\\tag{2.1}\\]\n\\[\nb^2 = a^2 (1 - e^2)\n\\tag{2.2}\\]\nPolar coordinates are convenient when describing conic orbits. The angle \\(\\theta\\) is the true anamoly, and represents the orbiting object’s angular position past perihelion. The distance from the principle focus \\(r\\) is related to true anamoly; the precise relationship relies on the type of conic orbit. For elliptical orbits, Equation 2.3 relates \\(r\\) and \\(\\theta\\); note that circular orbits are simply a special case where eccentricity \\(e\\) is zero. Equation 2.4 relates \\(r\\) and \\(\\theta\\) for parabolic orbits, with \\(p\\) defined as the distance from the single parabolic focus to perihelion. Finally, for hyperbolic orbits, equation Equation 2.5 relates \\(r\\) and \\(\\theta\\). An object on a parabolic orbit will be at rest when infinitely far from the central gravitational body. A hyperbolic orbit would keep the object’s speed positive while it travels away from the central gravitational body. An object with a velocity equal to to the central body’s escape velocity \\(v_{\\text{esc}}\\) would follow a parabolic orbit. An object follows a hyperbolic orbit if its velocity exceeds the central body’s excape velocity.\n\\[\n\\begin{array}{cc}\nr = \\frac{a(1-e^2)}{1 + e\\cos\\theta} & (0 \\leq e &lt; 1)\n\\end{array}\n\\tag{2.3}\\]\n\\[\n\\begin{array}{cc}\nr = \\frac{2p}{1 + \\cos\\theta} & (e = 1)\n\\end{array}\n\\tag{2.4}\\]\n\\[\n\\begin{array}{cc}\nr = \\frac{a(e^2-1)}{1 + e\\cos\\theta} & (e &gt; 1)\n\\end{array}\n\\tag{2.5}\\]\n\\[\nv_{\\text{esc}} = \\sqrt{2 G M / r}\n\\tag{2.6}\\]"
+  },
+  {
+    "objectID": "celestial-mechanics.html#newtons-laws",
+    "href": "celestial-mechanics.html#newtons-laws",
+    "title": "2  Celestial Mechanics",
+    "section": "2.2 Newton’s Laws",
+    "text": "2.2 Newton’s Laws\nEach of Newton’s Laws below are directly quoted from Caroll and Ostlie [1].\n\nThe Law of Inertia. An object at rest will remain at rest and an object in motion will remain in motion in a straight line at a constant speed unless acted upon by an external force.\nThe net force (the sum of all forces) acting on an object is proportional to the object’s mass and its resultant acceleration.\nFor every action there is an equal and opposite reaction2\n\nThese laws, which are taught in high school physics classes, revolutionized physics. Newton’s Law of Universal Gravitation, shown in Equation 2.7, succesfully linked the motions of our solar system’s bodies to gravitation. Caroll and Ostlie also prove that the gravitational force due to a spherical shell3 is equivalent to the gravitational force due to the shell’s point of center of mass [1].\n\n\\[\nF = G \\frac{M m}{r^2}\n\\tag{2.7}\\]"
+  },
+  {
+    "objectID": "celestial-mechanics.html#work-and-energy",
+    "href": "celestial-mechanics.html#work-and-energy",
+    "title": "2  Celestial Mechanics",
+    "section": "2.3 Work and Energy",
+    "text": "2.3 Work and Energy\nThe expression for gravitational potential energy \\(U\\) is shown in Equation 2.8, and gravitational kinetic energy \\(K\\) is shown in Equation 2.9.\n\\[\nU = -G \\frac{M m}{r}\n\\tag{2.8}\\]\n\\[\nK = \\frac{1}{2} m v^2\n\\tag{2.9}\\]"
+  },
+  {
+    "objectID": "celestial-mechanics.html#gravitational-constraints",
+    "href": "celestial-mechanics.html#gravitational-constraints",
+    "title": "2  Celestial Mechanics",
+    "section": "2.4 Gravitational Constraints",
+    "text": "2.4 Gravitational Constraints\nThe center of mass of a gravitationally bound system is constant. This produces a useful simplification in the two-body case: the dynamics can be simplified to a reduced mass \\(\\mu\\) with position \\(\\mathbb{r}\\) orbiting the center of mass of the original system with total mass \\(M\\). The equations below are pulled directly from equations 2.22, 2.23, and 2.24 in the text [1].\n\\[\n\\mu \\equiv \\frac{m_1 m_2}{m_1 + m_2}\n\\tag{2.10}\\]\n\\[\n\\begin{aligned}\nr_1 &= -\\frac{\\mu}{m_1} \\mathbf{r} \\\\\nr_2 &= -\\frac{\\mu}{m_2} \\mathbf{r}\n\\end{aligned}\n\\]\nIn this reduced case of the binary system, the total angular momentum \\(L\\) can be found using Equation 2.11.\n\\[\n\\mathbf{L} = \\mu \\mathbf{r} \\times \\mathbf{v} = \\mathbf{r} \\times \\mathbf{p}\n\\tag{2.11}\\]\nThe derivations of Kepler’s Laws in Chapter 2 culminate in more general forms of the laws’ previous mathematical expressions. The following equations, pulled from the text, are valid for binary orbits [1]. Equation 2.14 and Equation 2.15 represents the velocity and orbital period of the reduced mass \\(\\mu\\), respectively.\n\\[\n\\frac{d A}{d t} = \\frac{1}{2} \\frac{L}{\\mu}\n\\tag{2.12}\\]\n\\[\nE = -G \\frac{M \\mu}{2 a} = -G \\frac{m_1 m_2}{2 a}\n\\tag{2.13}\\]\n\\[\nv^2 = G \\left(m_1 + m_2\\right) \\left(\\frac{2}{r} - \\frac{1}{a}\\right)\n\\tag{2.14}\\]\n\\[\nP^2 = \\frac{r \\pi^2}{G \\left(m_1 + m_2\\right)}\n\\tag{2.15}\\]"
+  },
+  {
+    "objectID": "celestial-mechanics.html#the-virial-theorem",
+    "href": "celestial-mechanics.html#the-virial-theorem",
+    "title": "2  Celestial Mechanics",
+    "section": "2.5 The Virial Theorem",
+    "text": "2.5 The Virial Theorem\nFor another day!\n\n\n\n\n[1] Carroll, B. W., and Ostlie, D. A. An Introduction to Modern Astrophysics. Cambridge University Press, 2017."
+  },
+  {
+    "objectID": "celestial-mechanics.html#footnotes",
+    "href": "celestial-mechanics.html#footnotes",
+    "title": "2  Celestial Mechanics",
     "section": "",
-    "text": "In summary, this book has no content whatsoever."
+    "text": "As Caroll and Ostlie explain later in Chapter 2, objects in our solar system actually orbit the solar system barycenter, which is located just outside the surface of the sun.↩︎\nThis law is clear when considering forces as vectors. “Mathematically, the third law can be represented as… \\(F_{12} = -F_{21}\\)” [1].↩︎\nQualitatively, the word shell feels unimportant to me. The proof presented by Caroll and Ostlie is specific to a spherical shell, but I suspect that proof can be extended to all spheres; after integrating over cross-sectional rings on each shell, integrate the force due to each infinitesimally thin shell. I should try to work this out!↩︎"
   },
   {
     "objectID": "references.html",
