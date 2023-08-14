@@ -1,0 +1,177 @@
+---
+title: Celestial Mechanics
+abstract: |
+    Chapter 2 walks through the historical contributions of Kepler's Laws, Galileo's 
+    scientific confirmation of heliocentrism, and Newton's contributions to physics which
+    successfully connected Galileo (and others') astronomical observations with _gravity_.
+    {{< meta primary-authors >}} introduce work and energy, and derive Kepler's Laws before
+    proving the _virial theorem_: that the total energy of a gravitationally bound systems
+    is equivalent to "one-half of the time-averaged potential energy" @bob.
+---
+
+## Kepler's Laws
+
+The following laws --- Kepler's Laws --- are quoted directly from {{< meta primary-authors >}} @bob.
+Each are derived later in Chapter 2. 
+
+1. A planet orbits the Sun in an ellipse, with the Sun at one focus^[As {{< meta primary-authors >}} 
+explain later in Chapter 2, objects in our solar system _actually_ orbit the solar system 
+barycenter, which is located just outside the surface of the sun.] of the ellipse. 
+2. A line connecting a planet to the Sun sweeps out equal areas in equal time intervols. 
+3. The Harmonic Law: $P^2 = a^3$.
+
+Kepler's definitions place the paths of all orbits on _conic sections_: cross-sections
+of a cone. While circular, elliptical, parabolic, and hyperbolic paths are all conic sections,
+ach of the planets Kepler identified in the solar system have elliptical orbits. For this
+reason, a substantial section of Chapter 2 reviews the geometry of ellipses. 
+
+An ellipse has two focal points, with semimajor axis $a$ defined as one-half the length of
+the diameter --- the line which passes through both focal points --- of the ellipse. The 
+central body --- in our case, the Sun --- is located at one of the two focal points; that 
+point is _principle focus_ @bob. The distance from the principle focus to an orbiting object
+is referred to in @eq-equation-of-ellipse as $r$, and the distance from the other focus
+is referred to as $r'$.
+The semiminor axis $b$ is perpendicular to, and bisects, the semimajor axis. The eccentricity 
+$e$ is the distance between both focal points divided by the major axis $2a$ @bob. The label
+_perihelion_ on the ellipse, and on the major axis, which is closes to the principle focus;
+the opposite point along the major axis is referred to as _aphelion_. The suffix _helion_
+refers to our Sun. More general terms are _periapsis_ and _apoapsis_.
+
+:::{#fig-geometry-ellipse fig-cap="The Geometry of an Ellipse ([Wikipedia](https://en.wikipedia.org/wiki/Ellipse))" style="padding: 3em;"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Ellipse-def0.svg/2560px-Ellipse-def0.svg.png){style="background-color: white;"}
+:::
+
+The following equations hold for ellipses. All are pulled from Chapter 2 of the text @bob. 
+
+$$
+r + r' = 2a
+$$ {#eq-equation-of-ellipse}
+
+$$
+b^2 = a^2 (1 - e^2) 
+$$ {#eq-eccentricity-axes}
+
+Polar coordinates are convenient when describing conic orbits. The angle $\theta$
+is the _true anamoly_, and represents the orbiting object's angular position past perihelion.
+The distance from the principle focus $r$ is related to true anamoly; the precise relationship
+relies on the _type_ of conic orbit. For elliptical orbits, @eq-ecc-true-anamoly relates $r$
+and $\theta$; note that circular orbits are simply a special case where eccentricity $e$
+is zero. @eq-par-true-anamoly relates $r$ and $\theta$ for parabolic orbits, with $p$
+defined as the distance from the _single_ parabolic focus to perihelion. Finally,
+for hyperbolic orbits, equation @eq-hyp-true-anamoly relates $r$ and $\theta$. An object 
+on a parabolic orbit will be at rest when _infinitely far_ from the central gravitational 
+body. A hyperbolic orbit would keep the object's speed positive while it travels away from
+the central gravitational body. An object with a velocity _equal to_ to the central 
+body's escape velocity $v_{\text{esc}}$ would follow a parabolic orbit. An object follows
+a hyperbolic orbit if its velocity _exceeds_ the central body's excape velocity.
+
+$$
+\begin{array}{cc}
+r = \frac{a(1-e^2)}{1 + e\cos\theta} & (0 \leq e < 1)
+\end{array}
+$$ {#eq-ecc-true-anamoly}
+
+$$
+\begin{array}{cc}
+r = \frac{2p}{1 + \cos\theta} & (e = 1)
+\end{array}
+$$ {#eq-par-true-anamoly}
+
+$$
+\begin{array}{cc}
+r = \frac{a(e^2-1)}{1 + e\cos\theta} & (e > 1)
+\end{array}
+$$ {#eq-hyp-true-anamoly}
+
+$$
+v_{\text{esc}} = \sqrt{2 G M / r}
+$$ {#eq-vesc}
+
+## Newton's Laws
+
+Each of Newton's Laws below are directly quoted from {{< meta primary-authors >}} @bob.
+
+1. _The Law of Inertia_. An object at rest will remain at rest and an object in motion 
+will remain in motion in a straight line at a constant speed unless acted upon by an external force. 
+2. The _net_ force (the sum of all forces) acting on an object is proportional to the object's
+mass and its resultant acceleration.
+3. For every action there is an equal and opposite reaction^[This law is clear when considering forces as _vectors_. "Mathematically, the third law can be represented as... $F_{12} = -F_{21}$" @bob.]
+
+These laws, which are taught in high school physics classes, revolutionized physics. 
+Newton's Law of Universal Gravitation, shown in @eq-newton-gravity, succesfully linked
+the motions of our solar system's bodies to gravitation. {{< meta primary-authors >}}
+also prove that the gravitational force due to a spherical _shell_^[Qualitatively, the word _shell_ feels unimportant to me. The proof presented by {{< meta primary-authors >}} is specific to a 
+spherical shell, but I suspect that proof can be extended to _all spheres_; after 
+integrating over cross-sectional _rings_ on each shell, integrate the force due to each 
+infinitesimally thin _shell_. I should try to work this out!] is equivalent to the 
+gravitational force due to the shell's _point of center of mass_ @bob.
+
+<!--# TODO work out the solid sphere proof! -->
+
+$$
+F = G \frac{M m}{r^2}
+$$ {#eq-newton-gravity}
+
+## Work and Energy
+
+The expression for gravitational potential energy $U$ is shown in @eq-potential-gravity,
+and gravitational kinetic energy $K$ is shown in @eq-kinetic-gravity.
+
+$$
+U = -G \frac{M m}{r}
+$$ {#eq-potential-gravity}
+
+$$
+K = \frac{1}{2} m v^2
+$$ {#eq-kinetic-gravity}
+
+## Gravitational Constraints
+
+The center of mass of a gravitationally bound system is **constant**. This produces a useful
+simplification in the two-body case: the dynamics can be simplified to a reduced mass $\mu$
+with position $\mathbb{r}$ orbiting the center of mass of the original system with total mass $M$. 
+The equations below are pulled directly from equations 2.22, 2.23, and 2.24 in the text @bob. 
+
+$$
+\mu \equiv \frac{m_1 m_2}{m_1 + m_2}
+$$ {#eq-binary-reduced-mass}
+
+$$
+\begin{align}
+r_1 &= -\frac{\mu}{m_1} \mathbf{r} \\
+r_2 &= -\frac{\mu}{m_2} \mathbf{r}
+\end{align}
+$$
+
+In this reduced case of the binary system, the total angular momentum $L$ can be found 
+using @eq-binary-angular-momentum.
+
+$$
+\mathbf{L} = \mu \mathbf{r} \times \mathbf{v} = \mathbf{r} \times \mathbf{p}
+$$ {#eq-binary-angular-momentum}
+
+The derivations of Kepler's Laws in Chapter 2 culminate in more general forms of the 
+laws' previous mathematical expressions. The following equations, pulled from the text,
+are valid for binary orbits @bob. @eq-binary-velocity and @eq-binary-period represents 
+the velocity and orbital period of the reduced mass $\mu$, respectively.
+
+$$
+\frac{d A}{d t} = \frac{1}{2} \frac{L}{\mu}
+$$ {#eq-binary-kepler1}
+
+
+$$
+E = -G \frac{M \mu}{2 a} = -G \frac{m_1 m_2}{2 a}
+$$ {#eq-binary-total-energy}
+
+$$
+v^2 = G \left(m_1 + m_2\right) \left(\frac{2}{r} - \frac{1}{a}\right)
+$$ {#eq-binary-velocity}
+
+$$
+P^2 = \frac{r \pi^2}{G \left(m_1 + m_2\right)}
+$$ {#eq-binary-period}
+
+## The Virial Theorem
+
+<mark>For another day!</mark>

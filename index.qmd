@@ -1,5 +1,7 @@
 # Preface {.unnumbered}
 
+## Background 
+
 I discovered computational physics far too late. My first exposure was through my 
 astrodynamics coursework, completed in the final year of my aerospace engineering M.S. 
 program. I explored the introductory material --- Kepler's Laws, conic sections, restricted 
@@ -17,6 +19,8 @@ computation, I could not wait to learn more. I ordered
 [_Introduction to Modern Astrophysics_](https://www.cambridge.org/highereducation/books/an-introduction-to-modern-astrophysics/) by {{< meta primary-authors >}}, and started
 working through each chapter. Therefore: this text!
 
+## Methodology
+
 As I read each chapter, I am using this space to summarize the information I learned. 
 This will be incredibly difficult to do on my own, in spare time. At the time of writing,
 August 13th 2023, I truly have no idea if I will succeed in finishing this book; 
@@ -24,7 +28,10 @@ the odds certainly point to **no**. Still, the attempt will help me to further u
 my place within the space industry. Do I contribute to science, or exploration?
 
 As I write, I will reference equation and figure numbers from the Big Orange Book using 
-phrases such as _in the text_. All other references are internal to this document. 
+phrases such as _in the text_. All other references are internal to this document. As a 
+rule of thumb, all click-able links are internal links! 
+
+## Acknowledgements 
 
 Finally, I'm so grateful to [Quarto](https://quarto.org), [Jupyter](https://jupyter.org),
 [Julia](https://julialang.org), and other free software tools that enable quick and clear

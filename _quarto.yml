@@ -9,6 +9,7 @@ book:
   chapters:
     - index.qmd
     - celestial-sphere.qmd
+    - celestial-mechanics.qmd
     - references.qmd
 
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/american-institute-of-aeronautics-and-astronautics.csl
