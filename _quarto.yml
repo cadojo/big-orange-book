@@ -26,6 +26,7 @@ format:
     theme: 
       light: [ pulse,  "formatting/common.scss", "formatting/light.scss" ]
       dark:  [ pulse,  "formatting/common.scss", "formatting/dark.scss"  ]
+    css: formatting/styles.css
   pdf:
     documentclass: scrreprt
     extract-media: fig
